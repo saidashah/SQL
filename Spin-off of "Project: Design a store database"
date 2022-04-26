@@ -1,0 +1,33 @@
+CREATE TABLE Babystore (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, Aisle INTEGER, Rating INTEGER);
+
+INSERT INTO Babystore VALUES (1, "Diapers", 20, 100, 3, 10);
+
+INSERT INTO Babystore VALUES (2, "Strollers", 200, 50, 5, 8);
+
+INSERT INTO Babystore VALUES (3, "Car seat", 150, 50, 5, 7);
+
+INSERT INTO Babystore VALUES (4, "Baby monitor", 150, 20, 4, 5);
+
+INSERT INTO Babystore VALUES (5, "Clothes", 15, 300, 2, 5);
+
+INSERT INTO Babystore VALUES (6, "Cribs", 100, 50, 4, 6);
+
+INSERT INTO Babystore VALUES (7, "Mattress", 100, 50, 4, 7);
+
+INSERT INTO Babystore VALUES (8, "Toys", 10, 100, 1, 8);
+
+INSERT INTO Babystore VALUES (9, "Bath items", 25, 30, 1, 3);
+
+INSERT INTO Babystore VALUES (10, "Formula", 50, 50, 2, 10);
+
+INSERT INTO Babystore VALUES (11, "Bottles", 25, 50, 2, 9);
+
+INSERT INTO Babystore VALUES (12, "Snacks", 10, 100, 2, 7);
+
+INSERT INTO Babystore VALUES (13, "Diapering items", 30, 50, 3, 5);
+
+INSERT INTO Babystore VALUES (14, "First Aid tools", 60, 80, 3, 9);
+
+INSERT INTO Babystore VALUES (15, "Books", 5, 20, 1, 6);
+
+SELECT * FROM Babystore WHERE price > 50 GROUP BY Rating;
